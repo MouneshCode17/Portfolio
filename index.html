@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mounesh - Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color:white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 65) ;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(199, 199, 125);
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;
+            margin:130px 0;
+        }
+        .firstSection > div{
+            width:30%;
+        }
+        .leftSection{
+            font-size: 3rem;
+        }
+        .rightSection img{
+            width:80%;
+        }
+        .name{
+            color:blueviolet;
+        }
+        #element{
+            color:aqua;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin:auto;
+            height:30vw;
+        }
+        main hr{
+            border: 0;
+        background-color: blueviolet;
+        height:1.2px;
+        margin: 40px 84px;
+
+        }
+        .secondSection h1{
+            font-size: 2rem;
+           
+        }
+        .text{
+            font-size: 0.8rem;
+            color:gray;
+        }
+        .box{
+            background: white;
+  width: 80vw;
+  height: 2px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+        }
+        .vertical{
+            height:93px;
+            width:1px;
+            background-color: white;
+            /* margin:0 100px; */
+        }
+        .top{
+            width:23px;
+            position: relative;
+  top: -32px;
+  right:9px;
+
+        }
+        .vertical-text{
+            position: relative;
+  top: 60px;
+  right: 20px;
+        }
+        footer{
+            background-color: #101030;
+            height: 233px;
+        }
+        .footer{
+            display: flex;
+            margin:23px 122px;
+            padding:23px;
+            justify-content: space-evenly;
+        }
+        .footer-first{
+            width:50%;
+        }
+        /* .footer ul{
+           list-style: none;
+        }
+        .footer ul a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer >div{
+            width: 223px;
+
+        } */
+     .footer-text{
+            color: gray;
+            text-align: center;
+            align-self: last baseline;
+        }
+        .leftSection .btn{
+            background-color: blueviolet;
+            padding:12px;
+            border:2px solid #101030;
+            border-radius: 6px;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mounesh Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="name">Mounesh</span>
+            <div> I am a passionate </div><div>
+            <span id="element"></span>
+            <div class="buttons">
+                <button class="btn">Download Resume</button>
+                <button class="btn">GitHub</button>
+            </div>
+        </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="dev.png">
+            </div>
+        </section>
+      <hr>
+        <section class="secondSection">
+            <span class="text">Strengths of Mounesh</span>
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="c.png" class="top">
+                    <div class="vertical-text">
+                        C Programming Language
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="java.png" class="top">
+                    <div class="vertical-text">
+                        Core Java
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="sql.png" class="top">
+                    <div class="vertical-text">
+                        Structured Query Language
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="web.png" class="top">
+                    <div class="vertical-text">
+                        Web Development
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first" >
+                <h1><span id="moti"></span></h1>
+            </div>
+            <div class="footer-second">
+                <h1><span id="web"></span></h1>
+            </div>
+            
+    </footer>
+    <div class="footer-text">
+        Copyright &#169 www.mouneshportfolio.com | All rights reserved
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','JAVA Expert'],
+          typeSpeed: 100,
+          loop:true,
+          fadeOut:true
+        });
+      </script>
+      <script>
+        var typed = new Typed('#moti', {
+          strings: ['Stop not till the goal is reached'],
+          typeSpeed: 100,
+          fadeOut:true
+        });
+        var typed = new Typed('#web', {
+          strings: ['Web Dev is Fun'],
+          typeSpeed: 100,
+          fadeOut:true
+        });
+      </script>
+
+</body>
+
+</html>
